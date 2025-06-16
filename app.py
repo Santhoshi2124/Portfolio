@@ -19,14 +19,17 @@ with open("bg_dark.jpeg", "rb") as bg_file:
 
 
 
-
-
-# Load and display circular floating profile image (top-right)
 image = Image.open("profile.jpeg")
 img_base64 = image_to_base64(image)
+
 st.markdown(f"""
-            
-<div style="
+<div class="profile-card">
+  <img src='data:image/jpeg;base64,{img_base64}' class="profile-pic"/>
+  <p class="profile-name">Santhoshimaa<br>(B.E In ISE)</p>
+</div>
+
+<style>
+.profile-card {{
     position: fixed;
     top: 70px;
     right: 20px;
@@ -38,20 +41,34 @@ st.markdown(f"""
     box-shadow: 0 8px 20px rgba(0,0,0,0.3);
     z-index: 100;
     text-align: center;
-">
-  <img src='data:image/jpeg;base64,{img_base64}' style='
-      width: 100%;
-      border-radius: 12px;
-      margin-bottom: 8px;
-  '/>
-  <p style='color: #ddd; font-size: 13px;'>Santhoshimaa
-                                          (B.E In ISE)</p>
-</div>
+}}
+
+.profile-pic {{
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 8px;
+}}
+
+.profile-name {{
+    color: #ddd;
+    font-size: 13px;
+}}
+
+@media only screen and (max-width: 768px) {{
+    .profile-card {{
+        position: static;
+        margin: 20px auto;
+        width: 60%;
+    }}
+}}
+</style>
 """, unsafe_allow_html=True)
+
 
 st.markdown(f"""
             
     <style>
+            
             
             
         .stApp {{
@@ -158,6 +175,7 @@ with open("Santhoshimaa_Resume.pdf", "rb") as file:
 
     st.markdown(f"""
         <style>
+                
         .angled-resume-button {{
             background: linear-gradient(135deg, #1a2c40, #223b58);
             color: white;
@@ -299,7 +317,6 @@ st.markdown("""
     border-radius: 10px;
 '>
 """, unsafe_allow_html=True)
-
 st.markdown("""
 <style>
 .block-container {
@@ -307,8 +324,37 @@ st.markdown("""
     padding-right: 160px;
 }
 
+/* 👇 Add this for mobile responsiveness */
+@media only screen and (max-width: 768px) {
+    .block-container {
+        padding-top: 70px !important;
+        padding-right: 20px !important;
+        padding-left: 20px !important;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .profile-pic {
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .element-container > div[data-testid="column"] {
+        width: 100% !important;
+        flex: 1 1 100% !important;
+        max-width: 100% !important;
+    }
+}
+html {
+    scroll-behavior: smooth;
+}
+
+
 </style>
 """, unsafe_allow_html=True)
+
 
 
 
