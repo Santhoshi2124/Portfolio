@@ -235,7 +235,7 @@ st.markdown("""
         box-shadow: 0 4px 12px rgba(0,0,0,0.3);
         text-align: justify;
     '>
-        “Passionate 3rd year engineering student skilled in full-stack web development and real-world applications. 
+        “Passionate 4th year engineering student skilled in full-stack web development and real-world applications. 
         Eager to solve meaningful problems and collaborate in fast-paced environments.”
     </div>
     """, unsafe_allow_html=True)
@@ -277,7 +277,7 @@ st.markdown("""
                 box-shadow: 0 4px 10px rgba(0,0,0,0.3);
         '>
                 <b>B.E In Information Science And engineering(Pursuing)</b><br>
-                CMR Institute Of Technology  CGPA-8.41 <span style='float: right;'><i>(2026)</i></span>
+                CMR Institute Of Technology  CGPA-8.47 <span style='float: right;'><i>(2026)</i></span>
             </div>
 
     <div style='
