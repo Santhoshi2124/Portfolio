@@ -165,7 +165,7 @@ st.markdown("""
     text-shadow: 0 0 4px rgba(0, 204, 255, 0.4);
     margin-bottom: 10px;
 '>
-    🔗 <a href='https://www.linkedin.com/in/santhoshi-mk-47379725b' target='_blank' style='color: #4dd0e1; text-decoration: none;'>LinkedIn</a> |
+    🔗 <a href='https://www.linkedin.com/in/Santhoshimk/' target='_blank' style='color: #4dd0e1; text-decoration: none;'>LinkedIn</a> |
     💻 <a href='https://github.com/Santhoshi2124' target='_blank' style='color: #4dd0e1; text-decoration: none;'>GitHub</a>
 </div>
 """, unsafe_allow_html=True)
