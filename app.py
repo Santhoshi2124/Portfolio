@@ -135,7 +135,7 @@ st.markdown("""
     margin-bottom: 10px;
 '>👩‍💻 Santhoshimaa M.K</h3>
 """, unsafe_allow_html=True)
-st.markdown("<h4 style='color: gray;'>3rd Year Information Science Student | Developer | Tech Enthusiast</h4>", unsafe_allow_html=True)
+st.markdown("<h4 style='color: gray;'>4th Year Information Science Student | Developer | Tech Enthusiast</h4>", unsafe_allow_html=True)
 
 # Contact
 
@@ -360,54 +360,64 @@ html {
 
 # Project data
 project_cards = [
+{
+  "emoji": "🍽️",
+  "title": "ToshiTadka – AI-Enhanced Food Delivery Platform",
+  "tech_tags": ["MongoDB", "Express.js", "React", "Node.js", "Gemini AI", "REST API", "Context API"],
+  "desc": "Developed a full-stack food delivery platform with AI-powered personalization. Features include restaurant browsing, a persistent cart, secure backend APIs, and smart Gemini AI integrations for food recommendations and conversational assistance.",
+  "details": [
+    "Built a responsive MERN-based platform with dynamic restaurant listings and a persistent shopping cart using React Context API.",
+    "Engineered robust RESTful APIs to manage users, restaurants, orders, and cart data in MongoDB.",
+    "Integrated Gemini AI to create a ‘Cravings Solver’ that converts natural-language cravings into dish recommendations.",
+    "Developed an interactive ‘Foodie Friend’ chatbot for food discovery assistance and real-time order status updates.",
+    "Implemented secure data handling, smooth frontend routing, and a scalable backend for reliable performance."
+  ]
+}
+,
     {
-        "emoji": "🎒",
-        "title": "Chimudra Fee Tracker",
-        "tech_tags": ["Node.js", "Express.js", "MongoDB", "HTML", "CSS", "JavaScript"],
-        "desc": "Built a secure full-stack fee management system for educational institutions. It supports real-time fee tracking, role-based login, and seamless data operations using Node.js, Express.js, and MongoDB. The responsive frontend enables easy navigation, while backend APIs ensure reliable and secure deployment. Designed to simplify school and coaching center operations.",
-        "details": [
-            "Implemented secure login with role-based access control for admin and staff.",
-            "Designed RESTful APIs to manage fee records and student data.",
-            "Integrated environment-based deployment using .env for security.",
-            "Developed a responsive frontend for real-time fee updates and smooth navigation."
-        ]
-    },
+  "emoji": "📱",
+  "title": "Cart-Enabled Mobile Accessories Web Platform",
+  "tech_tags": ["HTML", "CSS", "JavaScript", "Node.js", "Express.js", "MongoDB", "Mapbox API"],
+  "desc": "Developed a full-stack platform for browsing and managing mobile accessories with secure authentication, smooth cart functionality, and integrated shop location mapping using Mapbox.",
+  "details": [
+    "Designed and implemented backend services using Node.js and Express.js with full CRUD operations for products and users.",
+    "Integrated secure user authentication and product upload functionality to support real-world retail workflows.",
+    "Utilized MongoDB for structured storage of product, user, and inventory data.",
+    "Implemented Mapbox API to display shop locations, enhancing user interaction and store discovery.",
+    "Built a responsive frontend using HTML, CSS, and JavaScript with a clean product catalog and smooth cart flow.",
+    "Focused on scalable backend routing, inventory management logic, and overall usability for an efficient shopping experience."
+  ]
+}
+,
     {
-        "emoji": "🛍️",
-        "title": "Mobile Accessories Web App",
-        "tech_tags": ["HTML", "CSS", "Node.js", "Express.js", "MongoDB", "Mapbox API"],
-        "desc": "Developed a product management web app for mobile accessories with full CRUD functionality. Built using Node.js, Express.js, and MongoDB, it features a user-friendly interface and secure, modular backend with middleware-based validation. Showcases strong backend skills, API integration, and scalable deployment in an e-commerce-like environment.",
-        "details": [
-            "Built CRUD operations for product listing and inventory tracking.",
-            "Used middleware for request validation and modular routing in Express.js.",
-            "Integrated Mapbox API to visualize delivery locations on an interactive map.",
-            "Employed environment configuration for scalable deployment."
-        ]
-    },
+  "emoji": "👕",
+  "title": "ClothCycle – Used Cloth Management Platform",
+  "tech_tags": ["Python", "Flask", "SQLite", "SQLAlchemy", "HTML", "CSS", "Bootstrap"],
+  "desc": "Developed a full-stack platform to manage the intake, tracking, and distribution of donated clothing with secure authentication, structured data management, and an interactive admin dashboard.",
+  "details": [
+    "Implemented secure user authentication using Flask-Login with session handling and password hashing for data protection.",
+    "Designed structured donation forms to capture cloth type, condition, quantity, and donor details, storing all entries using SQLAlchemy ORM.",
+    "Created an admin dashboard for streamlined viewing of records, updating donation status across stages, and managing outdated or duplicate entries.",
+    "Developed a responsive frontend with Bootstrap and Jinja2 templates for an intuitive and clean user experience.",
+    "Ensured scalability for future features including NGO collaboration modules, analytics dashboards, and extended distribution workflows."
+  ]
+}
+,
     {
-        "emoji": "♻️",
-        "title": "Used Cloth Processing System",
-        "tech_tags": ["HTML", "CSS", "JavaScript", "Python", "Flask",  "REST API", "SQLite"],
-        "desc": "Built a full-stack cloth donation tracking system with user authentication and real-time form submission. Developed using Flask, SQLite, and AJAX for smooth, asynchronous interactions. Enables secure entry and monitoring of donor data through a clean UI. Highlights REST API design, state management, and full-stack development for NGO and small-scale inventory use cases.",
-        "details": [
-            "Developed user login and donor tracking dashboard with Flask.",
-            "Enabled real-time form submission using AJAX for a smooth UX.",
-            "Designed REST APIs for handling donor data and item entries.",
-            "Stored data in SQLite for lightweight, efficient access."
-        ]
-    },
-    {
-        "emoji": "🧠",
-        "title": "Alzheimer’s Disease Classifier (In Progress)",
-        "tech_tags": ["Python", "TensorFlow", "Keras", "scikit-learn"],
-        "desc": "Collaborating on a machine learning model to classify Alzheimer’s stages (CN, MCI, AD) using genome-wide expression data. Leveraging transfer learning, dimensionality reduction, and deep learning to improve accuracy on limited biomedical datasets. Focused on early diagnosis support through AI-driven genomic analysis.",
-        "details": [
-            "Applying transfer learning to handle limited medical data.",
-            "Preprocessing genome-wide data for cleaner inputs and feature reduction.",
-            "Fine-tuning deep learning models for multi-class classification (CN, MCI, AD).",
-            "Exploring gene markers to enhance clinical insight and accuracy."
-        ]
-    }
+  "emoji": "🧬",
+  "title": "Alzheimer’s Disease Classification System",
+  "tech_tags": ["Python", "Transfer Learning", "Machine Learning", "Gene Expression Data", "Flask/Streamlit", "Pandas", "NumPy"],
+  "desc": "Built an AI-powered system for classifying Alzheimer’s disease using gene expression data with transfer learning, supported by an interactive web interface for predictions and educational assistance.",
+  "details": [
+    "Applied transfer learning on genome-wide gene expression datasets to classify Alzheimer’s disease with improved accuracy and reduced training time.",
+    "Designed complete workflows for preprocessing, feature extraction, model training, evaluation, and prediction.",
+    "Developed an interactive web interface using Streamlit/Flask to allow users to upload data and receive real-time classification outputs.",
+    "Integrated a knowledge-based chatbot to deliver Alzheimer’s awareness, symptom information, and care guidelines.",
+    "Implemented visualization components for gene distributions, prediction confidence, and model performance metrics.",
+    "Ensured modular, extensible system architecture for future enhancements such as multi-class classification and clinical dataset integration."
+  ]
+}
+
 ]
 
 # Projects Section
@@ -494,7 +504,7 @@ st.markdown("""
     - **Web Technologies**: HTML, CSS, JavaScript
     - **Frameworks & Libraries**: Node.js, Express.js, React.js  , Flask
     - **Database**: MySQL, MongoDB  
-    - **Tools**: VS Code, Power BI, Tableau, Git, LaTeX, Jupyter , Colab , Eclipse , Excel. 
+    - **Tools**: VS Code, Figma, Power BI, Tableau, Git, LaTeX, Jupyter , Colab , Eclipse , Excel. 
     - **DevOps**: Jenkins, Gradle, Maven, Azure Pipelines (Basics)  
     - **OS**: Windows, Ubuntu
     - **Version Control**:Git , GitHub
@@ -543,5 +553,5 @@ st.markdown("""
     border-radius: 10px;
 '>
 """, unsafe_allow_html=True)
-st.markdown("<div style='text-align: center; color: white;'>Built with ❤️ by Santhoshimaa | LinkedIn-Ready & Recruiter-Friendly</div>", unsafe_allow_html=True)
+st.markdown("<div style='text-align: center; color: white;'>Built with ❤️ by Santhoshimaa</div>", unsafe_allow_html=True)
 
